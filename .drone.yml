@@ -1,0 +1,7 @@
+pipeline:
+  start:
+    image: docker/compose
+    commands:
+      - docker compose up -d
+    volume:
+      - /var/run/docker.sock:/var/run/docker.sock
